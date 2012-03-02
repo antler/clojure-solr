@@ -4,12 +4,12 @@
            (org.apache.solr.client.solrj SolrQuery)
            (org.apache.solr.common.params ModifiableSolrParams)))
 
-(declare *connection*)
+(declare ^:dynamic *connection*)
 
 (defn connect [url]
   (CommonsHttpSolrServer. url))
 
-(defn- make-document [doc]
+(defn make-document [doc]
   (let [sdoc (SolrInputDocument.)]
     (doseq [[key value] doc]
       (let [key (cond
