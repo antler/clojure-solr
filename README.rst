@@ -2,7 +2,7 @@
 clojure-solr
 ============
 
-Clojure bindings for `Apache Solr <http://lucene.apache.org/solr/>`_.
+Clojure bindings for `Apache Solr 3.5.0 <http://lucene.apache.org/solr/>`_.
 
 Installation
 ============
@@ -12,7 +12,7 @@ project.clj file:
 
 ::
 
-    [clojure-solr "0.2.0-SNAPSHOT"]
+    [clojure-solr "0.3.0-SNAPSHOT"]
 
 To build from source, run:
 
