@@ -22,7 +22,7 @@
   (.add *connection* (make-document doc)))
 
 (defn add-documents! [coll]
-  (.add *connection* (vec (map make-document coll))))
+  (.add *connection* (map make-document coll)))
 
 (defn commit! []
   (.commit *connection*))
